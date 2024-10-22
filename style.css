@@ -27,15 +27,21 @@ header>a {
 header>a:hover {
     background-color: white;
 }
-#subjects-container {
+#subject-name {
+    padding: 1rem;
+    color: #349f9f;
+    font-size: 3rem;
+    text-align: center;
+}
+#subjects-container,#question-container {
     width: 90vw;
-    margin-top: 3rem;
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.subject-dropdown {
+.subject-dropdown, .question-dropdown {
     position: relative;
     display: flex;
     width: 60vw;
@@ -56,11 +62,11 @@ header>a:hover {
 .active-icon {
     transform: rotateZ(0deg);
 }
-.active-subject-year-container {
+.active-subject-year-container, .active-answer {
     display: flex !important;
     z-index: 5;
 }
-.subject-year-container {
+.subject-year-container, .answer {
     position: absolute;
     top: 4rem;
     width: 90%;
@@ -68,6 +74,11 @@ header>a:hover {
     flex-direction: column;
     background-color: aqua;
     display: none;
+}
+.answer {
+    font-size: 20px;
+    padding: 1em;
+    border-radius: 1em;
 }
 .subject-year-container > h3 {
     font-size: 20px;
