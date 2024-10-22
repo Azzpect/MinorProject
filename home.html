@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="assets/daitm.jpeg" alt="" id="logo">
+        <h2>Dinabandhu Andrews Institute of Technology & Management</h2>
+        <a href="#">About</a>
+    </header>
+    <section id="subjects-container">
+        <div class="subject-dropdown">
+            <h2 class="subject-name">Software Engineering</h2>
+            <img src="assets/down-arrow.svg" alt="" class="icon">
+            <div class="subject-year-container">
+                <h3>2020</h3>
+                <h3>2020</h3>
+                <h3>2020</h3>
+                <h3>2020</h3>
+                <h3>2020</h3>
+            </div>
+        </div>
+        <div class="subject-dropdown">
+            <h2 class="subject-name">Software Engineering</h2>
+            <img src="assets/down-arrow.svg" alt="" class="icon">
+            <div class="subject-year-container">
+                <h3>2020</h3>
+                <h3>2020</h3>
+                <h3>2020</h3>
+                <h3>2020</h3>
+                <h3>2020</h3>
+            </div>
+        </div>
+        <div class="subject-dropdown">
+            <h2 class="subject-name">Software Engineering</h2>
+            <img src="assets/down-arrow.svg" alt="" class="icon">
+            <div class="subject-year-container">
+                <h3>2020</h3>
+                <h3>2020</h3>
+                <h3>2020</h3>
+                <h3>2020</h3>
+                <h3>2020</h3>
+            </div>
+        </div>
+        <div class="subject-dropdown">
+            <h2 class="subject-name">Software Engineering</h2>
+            <img src="assets/down-arrow.svg" alt="" class="icon">
+            <div class="subject-year-container">
+                <h3>2020</h3>
+                <h3>2020</h3>
+                <h3>2020</h3>
+                <h3>2020</h3>
+                <h3>2020</h3>
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    let icons = document.querySelectorAll(".icon")
+    icons.forEach(icon => {
+        icon.addEventListener("click", e => {
+            e.target.classList.toggle("active-icon")
+            e.target.parentNode.childNodes[5].classList.toggle("active-subject-year-container")
+        })
+    })
+</script>
+</html>
